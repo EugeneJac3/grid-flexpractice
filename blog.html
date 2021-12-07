@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        .container {
+            display:grid;
+            background-color: lightgrey;
+            grid-template-columns: auto auto auto auto;
+            
+        }
+
+        .container > div{
+            
+            margin:10px;
+        }
+        
+        .header {
+            display:inline;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            text-align: start;
+           
+
+        }
+
+        .links {
+            grid-column-start:2;
+            grid-column-end: 5;
+            grid-row-start:1;
+            grid-row-end:1;
+            text-align: start;
+        }
+
+        .article {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start:2;
+            grid-row-end: 4;
+            background-color: white;
+           
+
+        }
+
+    
+
+        .extralink {
+
+            
+        }
+
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            padding: 10px;
+            font-size: small;
+            
+
+        }
+
+        .navbar{
+            list-style-type:none;
+            margin:20px;
+            padding:10px;
+            text-align: center;
+        }
+
+        .navbar li{
+            display: inline-block;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .smoker{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> <h1>Acme Inc.</h1>
+        </div>
+        
+        <div class="links">
+            <ul class="navbar">
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="about.asp">About</a></li>
+                <li><a href="about.asp">Blog</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="article">
+            <div><h2>Article Title</h2></div>
+
+            <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio minus magnam nam ipsum ea. Commodi voluptates cupiditate eos quo praesentium corrupti maiores illo? Culpa nisi quis vero velit alias natus ratione, voluptatem quos voluptatibus architecto id eius consectetur reprehenderit delectus doloribus recusandae dignissimos nemo rem, dicta repellat? Atque ratione minima rerum nostrum quo eligendi dolore vel odio, accusamus doloremque sunt voluptatem voluptas consequatur dolor cumque quas reiciendis molestiae? Amet veniam error nemo iste eveniet hic facilis, voluptatibus illo odit exercitationem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio minus magnam nam ipsum ea. Commodi voluptates cupiditate eos quo praesentium corrupti maiores illo? Culpa nisi quis vero velit alias natus ratione, voluptatem quos voluptatibus architecto id eius consectetur reprehenderit delectus doloribus recusandae dignissimos nemo rem, dicta repellat? Atque ratione minima rerum nostrum quo eligendi dolore vel odio, accusamus doloremque sunt voluptatem voluptas consequatur dolor cumque quas reiciendis molestiae? Amet veniam error nemo iste eveniet hic facilis, voluptatibus illo odit exercitationem!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio minus magnam nam ipsum ea. Commodi voluptates cupiditate eos quo praesentium corrupti maiores illo? Culpa nisi quis vero velit alias natus ratione, voluptatem quos voluptatibus architecto id eius consectetur reprehenderit delectus doloribus recusandae dignissimos nemo rem, dicta repellat? Atque ratione minima rerum nostrum quo eligendi dolore vel odio, accusamus doloremque sunt voluptatem voluptas consequatur dolor cumque quas reiciendis molestiae? Amet veniam error nemo iste eveniet hic facilis, voluptatibus illo odit exercitationem!</p>
+            </div>
+            <img src="smoker.jpeg" alt="Smoker Picture" style="width: 500px;height: 200px;" class="smoker">
+        </div>
+
+        <div class="extralink"><h2>Extra Links</h2>
+        
+        <ul>
+            <li><a href="default.asp">Official Docs</a></li>
+                <li><a href="about.asp">Privacy Policy</a></li>
+                <li><a href="about.asp">Terms of Service</a></li>
+        </ul>
+
+        </div>
+
+        <div class="footer"><h3>Jackson.Inc All rights Reserved.</h3></div>
+    </div>
+    
+</body>
+</html>
